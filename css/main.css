@@ -204,9 +204,12 @@ a {
 }
 
 .lough {
+  padding-top: 104px;
+  padding-bottom: 104px;
 }
 
 .lough__upper-content {
+  display: flex;
 }
 
 .lough-title {
@@ -226,6 +229,7 @@ a {
 }
 
 .lough__lower-content {
+  display: flex;
 }
 
 .provides {
@@ -235,6 +239,7 @@ a {
 }
 
 .provides-wrapper {
+  display: flex;
 }
 
 .provides-list {
