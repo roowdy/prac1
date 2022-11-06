@@ -271,7 +271,7 @@ a {
   color: #18181b;
   margin-bottom: 24px;
   position: relative;
-  margin-left: 20px;
+  margin-left: 40px;
 }
 
 .provides-list__item:last-child {
@@ -279,7 +279,7 @@ a {
 }
 
 .list-distance {
-  margin-right: 80px;
+  margin-right: 100px;
 }
 
 .provides-list__item::before {
@@ -288,7 +288,8 @@ a {
   width: 32px;
   height: 32px;
   top: 50%;
-  left: 0;
+  left: -20%;
+  transform: translateY(-50%);
   display: block;
   background-image: url("../img/Shield.svg");
   background-size: contain;
