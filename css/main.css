@@ -279,3 +279,16 @@ a {
 .list-distance {
   margin-right: 100px;
 }
+
+.provides-list__item::before {
+  content: "";
+  width: 32px;
+  height: 32px;
+  display: block;
+  left: 50%;
+  top: 50%;
+  background-image: url("../img/Shield.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: #18181b;
+}
