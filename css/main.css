@@ -270,6 +270,8 @@ a {
   line-height: 32px;
   color: #18181b;
   margin-bottom: 24px;
+  position: relative;
+  margin-left: 20px;
 }
 
 .provides-list__item:last-child {
@@ -277,18 +279,18 @@ a {
 }
 
 .list-distance {
-  margin-right: 100px;
+  margin-right: 80px;
 }
 
 .provides-list__item::before {
   content: "";
+  position: absolute;
   width: 32px;
   height: 32px;
-  display: block;
-  left: 50%;
   top: 50%;
+  left: 0;
+  display: block;
   background-image: url("../img/Shield.svg");
   background-size: contain;
-  background-repeat: no-repeat;
   color: #18181b;
 }
