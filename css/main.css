@@ -2,6 +2,7 @@
   font-family: "Inter", sans-serif;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 ul {
@@ -210,40 +211,71 @@ a {
 
 .lough__upper-content {
   display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(82, 82, 91, 0.25);
 }
 
 .lough-title {
+  width: 526px;
   font-style: normal;
   font-weight: 600;
   font-size: 48px;
   line-height: 64px;
   color: #18181b;
+  margin-right: 100px;
+  border-bottom: 1px solid #516eff;
+  padding-bottom: 56px;
 }
 
 .lough-description {
+  width: 666px;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 34px;
   color: #777777;
+  padding-bottom: 56px;
 }
 
 .lough__lower-content {
   display: flex;
+  margin-top: 48px;
+  align-items: center;
 }
 
 .provides {
+  margin-left: 100px;
 }
 
 .provides-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 34px;
+  color: #18181b;
 }
 
 .provides-wrapper {
   display: flex;
+  margin-top: 32px;
 }
 
 .provides-list {
 }
 
 .provides-list__item {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 32px;
+  color: #18181b;
+  margin-bottom: 24px;
+}
+
+.provides-list__item:last-child {
+  margin-bottom: 0px;
+}
+
+.list-distance {
+  margin-right: 100px;
 }
