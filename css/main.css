@@ -1,5 +1,7 @@
 * {
   font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 ul {
@@ -123,7 +125,7 @@ a {
   color: #ffffff;
   background-color: #516eff;
   padding: 16px 48px;
-  border-radius: 5px;
+  border-radius: 8px;
   margin-right: 48px;
 }
 
@@ -138,6 +140,65 @@ a {
   padding: 16px 48px;
 }
 
+.htg {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  background-color: #516eff;
+}
+
+.htg-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 46px;
+  color: #ffffff;
+}
+
+.htg-description {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 32px;
+  color: #ffffff;
+  margin-top: 16px;
+}
+
+.htg-flex {
+  display: flex;
+  align-items: center;
+}
+
+.htg-wrapper {
+  margin-right: 172px;
+}
+
+.htg-list {
+  display: flex;
+}
+
+.htg-list__item {
+  padding: 24px 32px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-right: 48px;
+}
+
+.htg-list__item:last-child {
+  margin-right: 0px;
+}
+
+.htg-list__description {
+  width: 112px;
+  text-align: center;
+  margin-top: 16px;
+}
+
 .htg-icon {
+  display: flex;
   fill: #52525b;
+  justify-content: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
 }
