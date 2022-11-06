@@ -17,6 +17,8 @@ a {
 .container {
   width: 1512px;
   margin: 0 auto;
+  padding-right: 108px;
+  padding-left: 108px;
 }
 
 .header-wrapper {
@@ -52,27 +54,90 @@ a {
   color: #52525b;
 }
 
-.navigation-list__item:first-child {
+.apoinment {
+  padding: 16px 40px;
+  background-color: rgba(81, 110, 255, 1);
+  border-radius: 10px;
+  color: #fff;
+}
+
+.active {
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
   line-height: 24px;
-  /* identical to box height, or 133% */
-
-  /* Primary */
-
   color: #516eff;
 }
 
-.apoinment {
-  padding: 16px 40px;
-  background-color: rgba(81, 110, 255, 1);
+.hero {
+  padding-top: 64px;
+  padding-bottom: 108px;
 }
 
-/* .navigation {
-  border-bottom: 1px solid #bcbcbc;
+.yellow {
+  color: #ffd700;
+}
+
+.hero-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+/* .hero-img {
+  margin-left: auto;
 } */
 
-/* .logo {
-  width: 217px;
-} */
+.hero__left-content {
+  margin-right: 48px;
+}
+
+.hero-title {
+  width: 650px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 74px;
+  color: #18181b;
+}
+
+.hero-description {
+  width: 512px;
+  margin-top: 25px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 34px;
+  margin-bottom: 64px;
+  /* or 170% */
+
+  /* Black & Gray/777 */
+
+  color: #777777;
+}
+
+.hero-btn--first {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+  background-color: #516eff;
+  padding: 16px 48px;
+  border-radius: 5px;
+  margin-right: 48px;
+}
+
+.hero-btn--second {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  border: 1px solid #52525b;
+  border-radius: 8px;
+  color: #52525b;
+  padding: 16px 48px;
+}
+
+.htg-icon {
+  fill: #52525b;
+}
