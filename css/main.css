@@ -52,7 +52,21 @@ a {
   color: #52525b;
 }
 
-.navigation-list__link:first-child {
+.navigation-list__item:first-child {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  /* identical to box height, or 133% */
+
+  /* Primary */
+
+  color: #516eff;
+}
+
+.apoinment {
+  padding: 16px 40px;
+  background-color: rgba(81, 110, 255, 1);
 }
 
 /* .navigation {
