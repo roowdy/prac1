@@ -295,3 +295,19 @@ a {
   background-size: contain;
   color: #18181b;
 }
+
+.appoinment {
+}
+
+.appoinment__upper-content {
+}
+
+.appoinment__lower-content {
+  display: flex;
+}
+
+.appoinment-img {
+}
+
+.appoinment-form {
+}
