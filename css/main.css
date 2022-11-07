@@ -330,5 +330,8 @@ a {
 
 .form__textarea {
   width: 100%;
+}
+.form__textarea textarea {
   resize: none;
+  width: 100%;
 }
