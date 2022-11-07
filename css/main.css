@@ -304,10 +304,31 @@ a {
 
 .appoinment__lower-content {
   display: flex;
+  align-items: center;
 }
 
 .appoinment-img {
 }
 
 .appoinment-form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+.form-area {
+  width: 800px;
+  height: 600px;
+}
+
+.form__name,
+.form__phone,
+.form__date,
+.form__doctors {
+  width: 50%;
+}
+
+.form__textarea {
+  width: 100%;
+  resize: none;
 }
