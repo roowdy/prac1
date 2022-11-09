@@ -394,8 +394,63 @@ a {
   color: #777777;
 }
 
+/*--------------------- SMILE------------------------- */
+.smile {
+  padding-top: 88px;
+  padding-bottom: 88px;
+  text-align: center;
+  background-color: #516eff;
+}
+
+.smile-title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 60px;
+  /* or 167% */
+
+  /* White/Primary */
+
+  color: #ffffff;
+}
+
+.smile-description {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  /* or 167% */
+
+  /* White/Primary */
+
+  color: #ffffff;
+  margin-top: 22px;
+  margin-bottom: 56px;
+}
+
+.smile-btn {
+  display: block;
+  width: 384px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 34px;
+  /* identical to box height, or 170% */
+
+  /* White/Primary */
+  margin-left: auto;
+  margin-right: auto;
+  color: #ffffff;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border: 2px solid #ffffff;
+  border-radius: 16px;
+}
+
 /*-------------------- APOINMENT ------------------*/
 .appoinment {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .appoinment__upper-content {
@@ -647,12 +702,44 @@ select {
   align-items: center;
 }
 
+.link-list {
+  width: 112px;
+}
+
 .link-list__item {
   margin-bottom: 16px;
 }
 
 .link-list:first-child {
   margin-right: 20px;
+}
+
+.footer-address {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* or 150% */
+
+  /* White/Primary */
+  color: #ffffff;
+}
+
+.mail-link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+  margin-top: 48px;
+  margin-bottom: 32px;
+
+  display: flex;
+  align-items: center;
+
+  /* White/Primary */
+
+  color: #ffffff;
 }
 
 .copyrights-info {
@@ -668,4 +755,27 @@ select {
   /* White/Primary */
 
   color: #ffffff;
+}
+
+.footer__first-block {
+  padding-right: 61px;
+}
+
+.footer__second-block {
+  padding-left: 61px;
+  padding-right: 61px;
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.footer__third-block {
+  padding-left: 61px;
+  padding-right: 61px;
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+  padding-bottom: 50px;
+}
+
+.footer__fourth-block {
+  padding-left: 61px;
+  padding-bottom: 42px;
 }
