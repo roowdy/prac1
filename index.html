@@ -120,25 +120,25 @@
                     <div class="form-area">
                         <form action="#" class="appoinment-form">
                             <div class="form__name">
-                                <label>
+                                <label class="form-label">
                                     Name
-                                    <input type="text">
+                                    <input type="text" placeholder="Full name" class="input-name">
                                 </label>
                             </div>
                             <div class="form__phone">
-                                <label>
+                                <label class="form-label">
                                     Phone
-                                    <input type="tel">
+                                    <input type="tel" placeholder="+01 (555) 000-0000" class="input-tel">
                                 </label>
                             </div>
                             <div class="form__date">
-                                <label>
+                                <label class="form-label">
                                     Date
-                                    <input type="date">
+                                    <input type="date" placeholder="DD/MM/YYYY" class="input-date">
                                 </label>
                             </div>
                             <div class="form__doctors">
-                                <label for="doctors">Doctor</label>
+                                <label for="doctors" class="form-label">Doctor</label>
                                 <select id="doctors" name="doctors">
                                     <option value="xs">Dr. David Ambrose</option>
                                     <option value="s">Dr. Jeanette Hoff</option>
@@ -147,10 +147,20 @@
                                 </select>
                             </div>
                             <div class="form__textarea">
-                                <label>
+                                <label class="form-label">
                                     Message</label>
-                                    <textarea name="" id="" cols="30" rows="10" class="textarea"></textarea>
+                                    <textarea name="" id="" cols="30" rows="10" class="textarea" placeholder="Include a message..."></textarea>
                             </div>
+                            <div class="form-checkbox">
+                                
+                                
+                                <label class="form-label">
+                                    <input type="checkbox" class="input-checkbox" value="Agree">
+                                    You agree to our friendly privacy policy.
+                                </label>
+                                
+                            </div>
+                            <button type="submit" class="form-btn">Confirm Appoinment</button>
                             
                         </form>
                     </div>
