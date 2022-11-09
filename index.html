@@ -171,23 +171,23 @@
                 <div class="appoinment__lower-content">
                     <img src="./img/Image.jpg" alt="" width="496" height="636" class="appoinment-img">
                     <div class="form-area">
-                        <form action="#" class="appoinment-form">
+                        <form action="#" class="appoinment-form" id="form">
                             <div class="form__name">
                                 <label class="form-label">
                                     Name
-                                    <input type="text" placeholder="Full name" class="input-name">
+                                    <input type="text" placeholder="Full name" class="input-name" id="name">
                                 </label>
                             </div>
                             <div class="form__phone">
                                 <label class="form-label">
                                     Phone
-                                    <input type="tel" placeholder="+01 (555) 000-0000" class="input-tel">
+                                    <input type="tel" placeholder="+01 (555) 000-0000" class="input-tel" id="tel">
                                 </label>
                             </div>
                             <div class="form__date">
                                 <label class="form-label">
                                     Date
-                                    <input type="date" placeholder="DD/MM/YYYY" class="input-date">
+                                    <input type="date" placeholder="DD/MM/YYYY" class="input-date" id="date">
                                 </label>
                             </div>
                             <div class="form__doctors">
@@ -202,18 +202,18 @@
                             <div class="form__textarea">
                                 <label class="form-label">
                                     Message</label>
-                                    <textarea name="" id="" cols="30" rows="10" class="textarea" placeholder="Include a message..."></textarea>
+                                    <textarea name="message" id="message" cols="30" rows="10" class="textarea" placeholder="Include a message..." ></textarea>
                             </div>
                             <div class="form-checkbox">
                                 
                                 
                                 <label class="form-label">
-                                    <input type="checkbox" class="input-checkbox" value="Agree">
+                                    <input type="checkbox" class="input-checkbox" value="Agree" id="checkbox">
                                     You agree to our friendly privacy policy.
                                 </label>
                                 
                             </div>
-                            <button type="submit" class="form-btn">Confirm Appoinment</button>
+                            <button onclick="store()" type="submit" class="form-btn" id="form-btn">Confirm Appoinment</button>
                             
                         </form>
                     </div>
@@ -268,5 +268,44 @@
     <div class="copyrights">
         <p class="copyrights-info">© 2001-2022, All Rights Reserved</p>
     </div>
+    <script>
+        var inputName = document.getElementById("name");
+            localStorage.setItem("name", inputName.value);
+
+        var inputTel = document.getElementById("tel");
+        localStorage.setItem("tel", inputTel.value);
+
+
+
+            var inputName = localStorage.getItem("name");
+            var storedVal = localStorage.getItem("tel");
+            var storedV = localStorage.getItem("date");
+            var storedValue = localStorage.getItem("message");
+
+
+            function store() {
+                var inputName = document.getElementById("name");
+                localStorage.setItem("name", inputName.value);
+                var inputTel = document.getElementById("tel");
+                localStorage.setItem("tel", inputTel.value);
+            }
+
+            function persistInput(input) {
+                    var key = "input-" + input.id;
+
+                    var storedValue = localStorage.getItem(key);
+
+                    if (storedValue)
+                        input.value = storedValue;
+
+                    input.addEventListener('input', function () {
+                        localStorage.setItem(key, input.value);
+                    });
+                }
+
+            var inputName = document.getElementById("name");
+
+                persistInput(inputName);
+    </script>
 </body>
 </html>
