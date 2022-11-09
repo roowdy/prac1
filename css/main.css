@@ -296,18 +296,137 @@ a {
   color: #18181b;
 }
 
+/*--------------------- FEATURE--------------------- */
+
+.feature {
+  padding-top: 128px;
+  padding-bottom: 128px;
+}
+
+.feature__upper-content {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #18181b;
+}
+
+.feature-title {
+  width: 500px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 64px;
+  /* or 133% */
+
+  /* Black & Gray/Primary */
+
+  color: #18181b;
+}
+
+.feature-description {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 74px;
+  /* identical to box height, or 132% */
+
+  /* Black & Gray/Primary */
+
+  color: #18181b;
+  text-transform: uppercase;
+  margin-left: auto;
+}
+
+.feature__lower-content {
+  margin-top: 80px;
+}
+
+.feature-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.feature-list__item {
+  width: 30%;
+  margin-bottom: 72px;
+  padding: 40px 32px;
+  /* White/BG */
+
+  background-color: #f8fafc;
+  /* Black & Gray/Black 10% */
+
+  border: 1px solid rgba(82, 82, 91, 0.1);
+  border-radius: 16px;
+}
+
+.feature-list__item img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.feature-card__title {
+  margin-top: 24px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 34px;
+  /* identical to box height, or 142% */
+
+  text-align: center;
+
+  /* Black & Gray/Primary */
+
+  color: #18181b;
+}
+
+.feature-card__description {
+  margin-top: 12px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  /* or 162% */
+
+  text-align: center;
+
+  /* Black & Gray/777 */
+
+  color: #777777;
+}
+
+/*-------------------- APOINMENT ------------------*/
 .appoinment {
 }
 
 .appoinment__upper-content {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #18181b;
 }
 
 .appoinment__lower-content {
   display: flex;
   align-items: center;
+  margin-top: 42px;
 }
 
 .appoinment-img {
+}
+
+.appoinment-description {
+  width: 400px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 64px;
+  /* or 133% */
+
+  text-align: right;
+
+  /* Black & Gray/Primary */
+
+  color: #18181b;
+  margin-left: auto;
 }
 
 .appoinment-form {
@@ -401,4 +520,152 @@ select {
   color: #ffffff;
   cursor: pointer;
   border-radius: 8px;
+}
+
+.appoinment-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 74px;
+  /* identical to box height, or 132% */
+
+  /* Black & Gray/Primary */
+
+  color: #18181b;
+}
+
+.bold {
+  font-weight: 700;
+  font-size: 60px;
+}
+
+/*----------------------- FOOTER------------------- */
+
+.footer {
+  background-color: #516eff;
+  padding-top: 104px;
+  padding-bottom: 96px;
+}
+
+.footer-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.footer-description {
+  width: 264px;
+  margin-top: 40px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 34px;
+  /* or 212% */
+
+  letter-spacing: 0.04em;
+
+  /* White/Primary */
+
+  color: #ffffff;
+}
+
+.copyrights {
+  background-color: #216583;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.footer-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 40px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 222px;
+  /* or 143% */
+
+  /* White/Primary */
+
+  color: #ffffff;
+}
+
+.footer-text1 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
+
+  /* White/Primary */
+
+  color: #ffffff;
+}
+
+.footer-time {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  /* White/Primary */
+
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+
+.link-list {
+}
+
+.item-link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  /* White/Primary */
+
+  color: #ffffff;
+}
+
+.link-title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
+
+  /* White/Primary */
+
+  color: #ffffff;
+  margin-bottom: 48px;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+}
+
+.link-list__item {
+  margin-bottom: 16px;
+}
+
+.link-list:first-child {
+  margin-right: 20px;
+}
+
+.copyrights-info {
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  text-align: center;
+
+  /* White/Primary */
+
+  color: #ffffff;
 }
