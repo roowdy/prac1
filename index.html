@@ -269,43 +269,15 @@
         <p class="copyrights-info">© 2001-2022, All Rights Reserved</p>
     </div>
     <script>
-        var inputName = document.getElementById("name");
-            localStorage.setItem("name", inputName.value);
-
-        var inputTel = document.getElementById("tel");
-        localStorage.setItem("tel", inputTel.value);
-
-
-
-            var inputName = localStorage.getItem("name");
-            var storedVal = localStorage.getItem("tel");
-            var storedV = localStorage.getItem("date");
-            var storedValue = localStorage.getItem("message");
-
-
-            function store() {
-                var inputName = document.getElementById("name");
-                localStorage.setItem("name", inputName.value);
-                var inputTel = document.getElementById("tel");
-                localStorage.setItem("tel", inputTel.value);
-            }
-
-            function persistInput(input) {
-                    var key = "input-" + input.id;
-
-                    var storedValue = localStorage.getItem(key);
-
-                    if (storedValue)
-                        input.value = storedValue;
-
-                    input.addEventListener('input', function () {
-                        localStorage.setItem(key, input.value);
+        window.onload = () => {
+                const inputs = document.querySelectorAll('input');
+                for (const input of inputs) {
+                    input.value = localStorage[`input_${input.name}`] || '';
+                    input.addEventListener('change', function () {
+                        localStorage[`input_${this.name}`] = this.value;
                     });
                 }
-
-            var inputName = document.getElementById("name");
-
-                persistInput(inputName);
+            };
     </script>
 </body>
 </html>
