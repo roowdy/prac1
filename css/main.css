@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 ul {
@@ -445,6 +446,188 @@ a {
   padding-bottom: 24px;
   border: 2px solid #ffffff;
   border-radius: 16px;
+}
+
+/* ---------------------- ABOUT   US ----------------*/
+.about-us {
+  padding-top: 128px;
+  padding-bottom: 128px;
+}
+
+.about-us__upper-content {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #bcbcbc;
+}
+
+.about-us__lower-content {
+  margin-top: 72px;
+  display: flex;
+  align-items: center;
+}
+
+.about-us__title {
+  width: 388px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 74px;
+  /* identical to box height, or 132% */
+
+  text-align: right;
+
+  /* Black & Gray/Primary */
+
+  color: #18181b;
+}
+
+.about-us__description {
+  margin-left: auto;
+  width: 426px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 64px;
+  /* or 133% */
+
+  text-align: right;
+
+  /* Black & Gray/Primary */
+
+  color: #18181b;
+}
+
+.our-history {
+  padding: 48px;
+  margin-left: 96px;
+  background-color: #f8fafc;
+  /* Black & Gray/Black 10% */
+
+  border: 1px solid rgba(82, 82, 91, 0.1);
+  border-radius: 16px;
+}
+
+.our-history__title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 34px;
+  /* identical to box height, or 142% */
+
+  /* Black & Gray/Primary */
+
+  color: #18181b;
+}
+
+.our-history__description {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 34px;
+  /* or 212% */
+
+  letter-spacing: 0.04em;
+
+  /* Black & Gray/777 */
+
+  color: #777777;
+  margin-top: 20px;
+}
+
+/* ---------------------DOCTORS------------------------ */
+.doctors {
+  padding-top: 120px;
+  padding-bottom: 144px;
+  background-color: #f8fafc;
+}
+
+.doctors__upper-content {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #bcbcbc;
+}
+
+.doctors-title {
+  width: 446px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 64px;
+  /* or 133% */
+
+  /* Black & Gray/Primary */
+
+  color: #18181b;
+}
+
+.doctors-description {
+  width: 585px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 74px;
+  /* identical to box height, or 132% */
+  margin-left: auto;
+
+  /* Black & Gray/Primary */
+
+  color: #18181b;
+}
+
+.doctors__lower-content {
+  margin-top: 88px;
+}
+
+.doctors-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.doctors-list__item {
+  text-align: center;
+}
+
+.doctor-name {
+  margin-top: 32px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 34px;
+  color: #18181b;
+}
+
+.doctor-prof {
+  margin-top: 4px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #777777;
+}
+
+.doctor-university {
+  margin-top: 2px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #777777;
+}
+
+.doctor-bnt {
+  width: 172px;
+  margin-top: 32px;
+  display: block;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1.5px solid #516eff;
+  border-radius: 8px;
 }
 
 /*-------------------- APOINMENT ------------------*/
