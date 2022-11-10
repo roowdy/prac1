@@ -231,7 +231,7 @@
                 <div class="appoinment__lower-content">
                     <img src="./img/Image.jpg" alt="" width="496" height="636" class="appoinment-img">
                     <div class="form-area">
-                        <form action="#" class="appoinment-form" id="form">
+                        <form class="appoinment-form" id="form">
                             <div class="form__name">
                                 <label class="form-label">
                                     Name
@@ -253,20 +253,18 @@
                             <div class="form__doctors">
                                 <label for="doctors" class="form-label">Doctor</label>
                                 <select id="doctors" name="doctors">
-                                    <option value="xs">Dr. David Ambrose</option>
-                                    <option value="s">Dr. Jeanette Hoff</option>
-                                    <option value="m" selected>Dr. Jenelia Breton</option>
-                                    <option value="l">Dr. Jagajeet Aurora</option>
+                                    <option value="Ambrose">Dr. David Ambrose</option>
+                                    <option value="Hoff">Dr. Jeanette Hoff</option>
+                                    <option value="Breton" selected>Dr. Jenelia Breton</option>
+                                    <option value="Aurora">Dr. Jagajeet Aurora</option>
                                 </select>
                             </div>
                             <div class="form__textarea">
                                 <label class="form-label">
                                     Message</label>
-                                    <textarea name="message" id="message" cols="30" rows="10" class="textarea" placeholder="Include a message..." ></textarea>
+                                    <textarea name="message" id="textarea" cols="30" rows="10" class="textarea" placeholder="Include a message..." ></textarea>
                             </div>
                             <div class="form-checkbox">
-                                
-                                
                                 <label class="form-label">
                                     <input type="checkbox" class="input-checkbox" value="Agree" id="checkbox">
                                     You agree to our friendly privacy policy.
@@ -328,16 +326,33 @@
     <div class="copyrights">
         <p class="copyrights-info">© 2001-2022, All Rights Reserved</p>
     </div>
-    <script>
-        window.onload = () => {
-                const inputs = document.querySelectorAll('input');
-                for (const input of inputs) {
-                    input.value = localStorage[`input_${input.name}`] || '';
-                    input.addEventListener('change', function () {
-                        localStorage[`input_${this.name}`] = this.value;
-                    });
-                }
-            };
+
+    <script type="text/javascript">
+        function store() {
+            var inputEmail = document.getElementById("name");
+            localStorage.setItem("name", inputEmail.value);
+
+            var inputTel = document.getElementById("tel");
+            localStorage.setItem("tel", inputTel.value);
+
+            var inputDate = document.getElementById("date");
+            localStorage.setItem("date", inputDate.value);
+
+            
+        
+        
+            var inputCheck = document.getElementById("checkbox");
+            localStorage.setItem("checkbox", inputCheck.value);
+
+            var inputText = document.getElementById("textarea");
+            localStorage.setItem("text", inputText.value);
+
+
+
+
+
+
+        }
     </script>
 </body>
 </html>
